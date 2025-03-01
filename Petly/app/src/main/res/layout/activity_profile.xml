@@ -1,0 +1,129 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/user_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Likes"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/pet_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anafoto" />
+
+        <TextView
+            android:id="@+id/pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet_Name"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="8dp" />
+        <TextView
+            android:id="@+id/pet_age_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age and Gender"
+            android:textSize="23sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/pet_breed_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed and Type"
+            android:textSize="23sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/pet_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="23sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/pet_meettype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meet Type"
+            android:textSize="23sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Photos"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:id="@+id/pet_photos_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/pet_photo1"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kucukfoto3" />
+
+            <ImageView
+                android:id="@+id/pet_photo2"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kucukfoto2" />
+
+            <ImageView
+                android:id="@+id/pet_photo3"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kucukfoto1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/oranj"
+            android:text="Keep liking!" />
+
+
+    </LinearLayout>
+</ScrollView>

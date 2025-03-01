@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Petly</string>
+    <string name="welcomepage">Welcome Image</string>
+    <string name="register_image">register_image</string>
+    <string name="rehome_image">rehome_image</string>
+    <string name="dates_image">dates_image</string>
+
+</resources>

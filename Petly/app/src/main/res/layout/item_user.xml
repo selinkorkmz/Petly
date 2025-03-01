@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/enguzeli">
+
+    <!-- User Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- User Image -->
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="80dp"
+            android:src="@drawable/img_1"
+            android:layout_height="80dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- User Info -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- Pet information -->
+            <TextView
+                android:id="@+id/pet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Name"
+                android:textStyle="bold"
+                android:layout_below="@id/user_like_count"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/pet_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Type"
+                android:layout_below="@id/pet_name" />
+
+            <TextView
+                android:id="@+id/pet_breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Breed"
+                android:layout_below="@id/pet_type" />
+
+            <TextView
+                android:id="@+id/pet_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Age"
+                android:layout_below="@id/pet_breed" />
+
+            <TextView
+                android:id="@+id/pet_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Gender"
+                android:layout_below="@id/pet_age" />
+
+            <TextView
+                android:id="@+id/pet_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Description"
+                android:layout_below="@id/pet_gender" />
+
+            <TextView
+                android:id="@+id/pet_meettype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meet Type"
+                android:layout_below="@id/pet_description" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Like Button -->
+    <Button
+        android:id="@+id/like_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Like"
+        android:backgroundTint="@color/oranj"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

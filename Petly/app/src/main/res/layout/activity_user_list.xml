@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Home button -->
+
+    <!-- Profile button -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="659dp"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="119dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:backgroundTint="@color/oranj"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Home"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_profile"
+            android:layout_width="0dp"
+            android:layout_height="119dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:backgroundTint="@color/oranj"
+            android:text="Profile"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
